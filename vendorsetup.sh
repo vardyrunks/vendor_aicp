@@ -1,4 +1,6 @@
-for combo in $(curl -s  https://raw.githubusercontent.com/vardyrunks/vendor_jenkins/lp5.1/aicp-build-targets | sed -e 's/#.*$//' | grep lp5.0 | awk {'print $2'})
-do
-    add_lunch_combo $combo
-done
+aicp_e980-userdebug lp5.0
+aicp_endeavoru-userdebug lp5.0
+aicp_grouper-userdebug lp5.0
+aicp_hammerhead-userdebug lp5.0
+aicp_deb-userdebug lp5.0
+aicp_flo-userdebug lp5.0
